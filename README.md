@@ -1,1 +1,1 @@
-# Anigo-plugins: @types 
+# Anigo-plugins: @base
