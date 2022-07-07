@@ -1,3 +1,3 @@
-module github.com/Anigo-plugins/types
+module github.com/Anigo-plugins/base
 
 go 1.18
