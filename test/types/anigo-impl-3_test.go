@@ -11,7 +11,7 @@ var _DomainTests = map[string]string{
 
 func Test_A3_GetDomain(t *testing.T) {
 	for k, v := range _DomainTests {
-		if d := Anigo.GetDomain(v); d != k {
+		if d, ok := Anigo.GetDomain(v); !ok || d != k {
 			t.Errorf("Expected %s, got %s", v, d)
 
 		}

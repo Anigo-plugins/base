@@ -12,6 +12,8 @@ func (a *Anigo) GetProviders() ([]ProviderPlugin, bool) {
 	return []ProviderPlugin{}, false
 }
 
+// // --------------------------------------------------- \\ \\
+
 func (a *Anigo) GetProviderNames() ([]string, bool) {
 	if prov, ok := a.GetProviders(); ok {
 		var solvers []string

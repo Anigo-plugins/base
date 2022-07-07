@@ -3,7 +3,7 @@ package types
 import (
 	"testing"
 
-	"github.com/Anigo-plugins/types/lib/types"
+	"github.com/Anigo-plugins/base/lib/types"
 )
 
 var Anigo = types.Anigo{

@@ -9,13 +9,13 @@ type ProcessPlugin[_ PersistentProcess | FloatingProcess] struct {
 }
 
 type ServicePlugin struct {
-	Handler func(string, ...string) (string, bool)
+	Handler func(mod string, params ...string) (interface{}, bool)
 	Test    func() []string
 	Solvers []string
 }
 
 type ProviderPlugin struct {
-	Handler func(string, string) (string, bool)
+	Handler func(domain string, url string) (directUrl string, ok bool)
 	Test    func() []string
 	Solvers []string
 }
