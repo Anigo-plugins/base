@@ -58,5 +58,5 @@ func (a *Anigo) UseService(svc string, mod string, params ...string) (interface{
 
 	}
 
-	return []interface{}{}, false
+	return nil, false
 }
