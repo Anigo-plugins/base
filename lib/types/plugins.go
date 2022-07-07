@@ -4,7 +4,7 @@ type PersistentProcess string
 type FloatingProcess string
 
 type ProcessPlugin[_ PersistentProcess | FloatingProcess] struct {
-	Handler func() error
+	Handler func(*Anigo) error
 	Test    func() []string
 }
 
